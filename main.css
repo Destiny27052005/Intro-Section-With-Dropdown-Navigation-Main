@@ -17,13 +17,22 @@
 body {
     height: 100%;
     font-family: "Epilogue", sans-serif;
-    background-color: var(--Gray-50);
+    background-color: hsl(0, 8%, 95%);
     position: relative;
 }
 
 li,
 button {
     cursor: pointer;
+}
+
+li {
+    color: var(--Gray-500);
+    transition: all 0.5s;
+}
+
+li:hover {
+    color: var(--Gray-950);
 }
 
 p {
@@ -191,6 +200,11 @@ main button:hover {
         position: relative;
     }
 
+
+    .nav_list {
+        background: none;
+    }
+
     .nav-item {
         display: flex;
         column-gap: 10px;
@@ -222,9 +236,11 @@ main button:hover {
         padding: 0 10rem;
         position: relative;
     }
-.content {
-    margin-top: 80px;
-}
+
+    .content {
+        margin-top: 90px;
+    }
+
     a,
     nav button {
         margin: 0;
@@ -234,6 +250,7 @@ main button:hover {
         font-size: 4rem;
         font-weight: 700;
         margin-bottom: 2rem;
+        margin-top: 2rem;
     }
 
     p {
@@ -253,20 +270,22 @@ main button:hover {
 
     .dropdown1 {
         width: 150px;
-        background-color: var(--Gray-50);
+        background-color: #fff;
         position: absolute;
         padding: 1rem 1rem;
-        margin: 1.5rem 0 0 0;
+        margin: 0.8rem 0 0 0;
         left: -5rem;
         border-radius: 10px;
+        z-index: 1000;
     }
 
     .dropdown2 {
         background-color: var(--Gray-50);
         position: absolute;
         padding: 1rem 1.5rem;
-        margin: 1.5rem 0 0 0;
+        margin: 0.8rem 0 0 0;
         border-radius: 10px;
+        z-index: 1000;
     }
 
     main button {
