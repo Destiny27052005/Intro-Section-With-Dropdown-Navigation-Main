@@ -280,6 +280,7 @@ main button:hover {
     }
 
     .dropdown2 {
+        width: 140px;
         background-color: var(--Gray-50);
         position: absolute;
         padding: 1rem 1.5rem;
